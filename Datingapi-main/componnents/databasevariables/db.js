@@ -8,7 +8,7 @@ var i=0;
 const connectDB =  {
   connection: async () => {
             await mongoose.set("strictQuery", false);
-            await mongoose.connect("mongodb+srv://udityaprakash01:"+process.env.MONGODBPASS+"@cluster0.za5wk8j.mongodb.net/datingDB", (err) => {   
+            await mongoose.connect("mongodb+srv://username:"+process.env.MONGODBPASS+"@cluster0.za5wk8j.mongodb.net/datingDB", (err) => {   
               if (!err) {
                 console.log("db connected successfully");
                 try{
